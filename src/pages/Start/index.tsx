@@ -1,10 +1,22 @@
 import React from 'react';
-import { Container } from './styles';
+import { FaCode, FaUser } from 'react-icons/fa';
+import { Container, EntryCard, EntryCardItem } from './styles';
+import logo from '../../assets/logo.png';
 
 const Start: React.FC = () => {
   return (
     <Container>
-      <h1>Projeto Manager</h1>
+      <img src={logo} alt="logo" />
+      <EntryCard>
+        <EntryCardItem>
+          <FaCode size={50} />
+          <span>Entrar como Dev</span>
+        </EntryCardItem>
+        <EntryCardItem color="#fff" background="#111111">
+          <FaUser size={50} />
+          <span>Entrar como Cliente</span>
+        </EntryCardItem>
+      </EntryCard>
     </Container>
   );
 };
