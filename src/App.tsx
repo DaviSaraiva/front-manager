@@ -1,13 +1,14 @@
 import React from 'react';
+import Start from './pages/Start';
+import GlobalStyle from './styles/global';
 
-function App() {
-    return (
-        <div>
-            <h1>Projeto Manager</h1>
-        </div>
-        );
-    }
-    
-    export default App;
-    
-    
+const App: React.FC = () => {
+  return (
+    <>
+      <Start />
+      <GlobalStyle />
+    </>
+  );
+};
+
+export default App;
