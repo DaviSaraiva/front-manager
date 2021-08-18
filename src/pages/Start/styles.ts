@@ -41,6 +41,7 @@ export const EntryCardItem = styled.div<IEntryCardItemProps>`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  transition: 0.2s;
 
   ${props =>
     props.color &&
