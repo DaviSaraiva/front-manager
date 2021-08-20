@@ -12,16 +12,22 @@ const SingInDev: React.FC = () => {
         <Content>
           <Form>
             <h1>Login com Dev</h1>
-            <Input icon={FaEnvelope} placeholder="Email" type="email" />
+            <Input
+              icon={FaEnvelope}
+              placeholder="Email"
+              type="email"
+              required
+            />
             <Input
               icon={FaKey}
               placeholder="Senha"
               isPassword
+              required
               type="password"
             />
             <Button>Entrar</Button>
             <FormActions>
-              <Link to="/sign-up">Faça seu Cadastro</Link>
+              <Link to="/cadastrodev">Faça seu Cadastro</Link>
               <Link to="/">Voltar</Link>
             </FormActions>
           </Form>
