@@ -5,12 +5,15 @@ import 'react-notifications-component/dist/theme.css';
 
 import Routes from './routes';
 import GlobalStyle from './styles/global';
+import { AppProvider } from './context';
 
 const App: React.FC = () => {
   return (
     <BrowserRouter>
       <ReactNotification />
-      <Routes />
+      <AppProvider>
+        <Routes />
+      </AppProvider>
       <GlobalStyle />
     </BrowserRouter>
   );
